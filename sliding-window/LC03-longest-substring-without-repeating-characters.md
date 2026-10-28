@@ -7,7 +7,7 @@
 **标签**: Sliding Window, Hash Table
 
 ## 题目截图
-![alt text](image.png)
+![alt text](../images/LC3.png)
 
 ## 代码
 
@@ -24,6 +24,9 @@ class Solution:
             ans = max(ans, right - left + 1)  # 当前窗口长度
         return ans
 ```
+## 复杂度
+- 时间：O(n)，`right`遍历一遍字符串，`left`只往右跳，每个字符处理一次
+- 空间：O(min(n,m)), `seen`最多存m个不同字符（m是字符集大小）
 
 ## 解题心得
 
